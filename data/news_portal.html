@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNews - Portal de Noticias de Tecnología</title>
+    <meta name="description" content="Las últimas noticias sobre tecnología, programación e innovación">
+    <meta name="keywords" content="tecnología, programación, IA, desarrollo web, Python">
+    <meta property="og:title" content="TechNews - Noticias Tech">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-top">
+            <span class="date-time" data-timezone="UTC">Lunes, 15 de Enero 2024 | 14:30 UTC</span>
+            <span class="weather">🌤️ 22°C</span>
+        </div>
+        <h1 class="site-logo">TechNews</h1>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#" data-section="latest">Últimas</a></li>
+                <li><a href="#" data-section="ai">IA</a></li>
+                <li><a href="#" data-section="programming">Programación</a></li>
+                <li><a href="#" data-section="security">Seguridad</a></li>
+                <li><a href="#" data-section="startups">Startups</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="news-container">
+        <!-- Noticia Destacada Principal -->
+        <article class="news-article featured-main" data-article-id="2024-001" data-category="ai" data-priority="high">
+            <header class="article-header">
+                <h2 class="article-title">
+                    <a href="/article/2024-001">GPT-5 revoluciona el desarrollo de software con capacidades de programación autónoma</a>
+                </h2>
+                <div class="article-meta">
+                    <span class="author" data-author-id="jgarcia">
+                        Por <a href="/author/jgarcia" rel="author">Juan García</a>
+                    </span>
+                    <time class="publish-date" datetime="2024-01-15T10:30:00Z">15 de Enero, 2024 - 10:30</time>
+                    <span class="read-time" data-minutes="8">8 min de lectura</span>
+                    <span class="category-badge ai">Inteligencia Artificial</span>
+                </div>
+            </header>
+            
+            <div class="article-content">
+                <img src="images/gpt5-coding.jpg" alt="GPT-5 escribiendo código" class="article-image featured-image" 
+                     data-caption="GPT-5 en acción generando código Python">
+                <p class="article-summary lead">
+                    OpenAI ha lanzado GPT-5, un modelo de IA que puede desarrollar aplicaciones completas 
+                    de forma autónoma, entender arquitecturas de software complejas y refactorizar código 
+                    legacy con una precisión sin precedentes.
+                </p>
+                <p class="article-excerpt">
+                    En pruebas iniciales, GPT-5 ha demostrado la capacidad de crear APIs REST completas, 
+                    implementar patrones de diseño avanzados y optimizar algoritmos existentes, reduciendo 
+                    el tiempo de desarrollo en un 70% según estudios preliminares...
+                </p>
+                <a href="/article/2024-001" class="read-more-link">Leer más →</a>
+            </div>
+            
+            <footer class="article-footer">
+                <div class="article-stats">
+                    <span class="views" data-count="15234">👁️ 15,234 vistas</span>
+                    <span class="comments" data-count="342">💬 342 comentarios</span>
+                    <span class="shares" data-count="892">🔗 892 compartidos</span>
+                    <span class="likes" data-count="4521">❤️ 4,521</span>
+                </div>
+                <div class="article-tags">
+                    <a href="/tag/gpt5" class="tag">#GPT5</a>
+                    <a href="/tag/ai" class="tag">#AI</a>
+                    <a href="/tag/automation" class="tag">#Automation</a>
+                    <a href="/tag/coding" class="tag">#Coding</a>
+                </div>
+            </footer>
+        </article>
+
+        <!-- Grid de Noticias Secundarias -->
+        <section class="news-grid">
+            <!-- Noticia 2 -->
+            <article class="news-article" data-article-id="2024-002" data-category="programming" data-priority="normal">
+                <header class="article-header">
+                    <h3 class="article-title">
+                        <a href="/article/2024-002">Python 3.13 introduce compilación JIT para mejorar el rendimiento en un 40%</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span class="author" data-author-id="mlopez">María López</span>
+                        <time class="publish-date" datetime="2024-01-15T09:15:00Z">Hoy, 09:15</time>
+                        <span class="category-badge programming">Programación</span>
+                    </div>
+                </header>
+                <div class="article-content">
+                    <p class="article-summary">
+                        La nueva versión de Python incluye un compilador JIT experimental que promete 
+                        acelerar significativamente la ejecución de código, especialmente en aplicaciones 
+                        de cálculo intensivo.
+                    </p>
+                </div>
+                <footer class="article-footer">
+                    <div class="article-stats">
+                        <span class="views" data-count="8923">👁️ 8,923</span>
+                        <span class="comments" data-count="156">💬 156</span>
+                        <span class="likes" data-count="2341">❤️ 2,341</span>
+                    </div>
+                </footer>
+            </article>
+
+            <!-- Noticia 3 -->
+            <article class="news-article" data-article-id="2024-003" data-category="security" data-priority="high">
+                <header class="article-header">
+                    <h3 class="article-title">
+                        <a href="/article/2024-003">Vulnerabilidad crítica descubierta en npm afecta a millones de proyectos</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span class="author" data-author-id="crodriguez">Carlos Rodríguez</span>
+                        <time class="publish-date" datetime="2024-01-15T08:45:00Z">Hoy, 08:45</time>
+                        <span class="category-badge security urgent">🔴 Seguridad - Urgente</span>
+                    </div>
+                </header>
+                <div class="article-content">
+                    <p class="article-summary">
+                        Se ha identificado una vulnerabilidad de ejecución remota de código en npm que 
+                        podría permitir a atacantes comprometer proyectos Node.js. Se recomienda actualización inmediata.
+                    </p>
+                </div>
+                <footer class="article-footer">
+                    <div class="article-stats">
+                        <span class="views" data-count="45678">👁️ 45,678</span>
+                        <span class="comments" data-count="523">💬 523</span>
+                        <span class="likes" data-count="1234">❤️ 1,234</span>
+                    </div>
+                </footer>
+            </article>
+
+            <!-- Noticia 4 -->
+            <article class="news-article" data-article-id="2024-004" data-category="startups" data-priority="normal">
+                <header class="article-header">
+                    <h3 class="article-title">
+                        <a href="/article/2024-004">Startup española de IA levanta 50M€ en ronda Serie B</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span class="author" data-author-id="amoreno">Ana Moreno</span>
+                        <time class="publish-date" datetime="2024-01-14T16:30:00Z">Ayer, 16:30</time>
+                        <span class="category-badge startups">Startups</span>
+                    </div>
+                </header>
+                <div class="article-content">
+                    <p class="article-summary">
+                        NeuralTech, especializada en procesamiento de lenguaje natural, cierra una ronda 
+                        de financiación liderada por Sequoia Capital para expandirse internacionalmente.
+                    </p>
+                </div>
+                <footer class="article-footer">
+                    <div class="article-stats">
+                        <span class="views" data-count="3456">👁️ 3,456</span>
+                        <span class="comments" data-count="89">💬 89</span>
+                        <span class="likes" data-count="567">❤️ 567</span>
+                    </div>
+                </footer>
+            </article>
+
+            <!-- Noticia 5 -->
+            <article class="news-article breaking-news" data-article-id="2024-005" data-category="ai" data-priority="breaking">
+                <header class="article-header">
+                    <span class="breaking-badge">🔴 ÚLTIMA HORA</span>
+                    <h3 class="article-title">
+                        <a href="/article/2024-005">Google presenta Gemini Ultra: su IA más potente supera a GPT-4 en benchmarks</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span class="author" data-author-id="rsilva">Roberto Silva</span>
+                        <time class="publish-date" datetime="2024-01-15T14:00:00Z">Hace 30 minutos</time>
+                        <span class="category-badge ai">IA</span>
+                    </div>
+                </header>
+                <div class="article-content">
+                    <p class="article-summary">
+                        Google DeepMind acaba de anunciar Gemini Ultra, que establece nuevos récords 
+                        en comprensión multimodal y razonamiento complejo, superando a GPT-4 en 30 de 32 benchmarks.
+                    </p>
+                </div>
+                <footer class="article-footer">
+                    <div class="article-stats">
+                        <span class="views" data-count="892">👁️ 892</span>
+                        <span class="comments" data-count="45">💬 45</span>
+                        <span class="likes" data-count="234">❤️ 234</span>
+                    </div>
+                </footer>
+            </article>
+
+            <!-- Noticia 6 -->
+            <article class="news-article" data-article-id="2024-006" data-category="programming" data-priority="normal">
+                <header class="article-header">
+                    <h3 class="article-title">
+                        <a href="/article/2024-006">React 19 Beta: Las nuevas características que cambiarán el desarrollo frontend</a>
+                    </h3>
+                    <div class="article-meta">
+                        <span class="author" data-author-id="lmartinez">Laura Martínez</span>
+                        <time class="publish-date" datetime="2024-01-14T11:20:00Z">Ayer, 11:20</time>
+                        <span class="category-badge programming">Programación</span>
+                    </div>
+                </header>
+                <div class="article-content">
+                    <p class="article-summary">
+                        La beta de React 19 introduce Server Components estables, Actions mejoradas 
+                        y optimizaciones de rendimiento que reducen el bundle size en un 30%.
+                    </p>
+                </div>
+                <footer class="article-footer">
+                    <div class="article-stats">
+                        <span class="views" data-count="6789">👁️ 6,789</span>
+                        <span class="comments" data-count="234">💬 234</span>
+                        <span class="likes" data-count="1890">❤️ 1,890</span>
+                    </div>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Sección de Opinión/Análisis -->
+        <section class="opinion-section">
+            <h2 class="section-title">Análisis y Opinión</h2>
+            <article class="opinion-article" data-article-id="2024-op-001" data-type="opinion">
+                <header>
+                    <h3 class="article-title">
+                        <a href="/opinion/2024-op-001">¿Es el fin de los programadores humanos? Un análisis realista del impacto de la IA</a>
+                    </h3>
+                    <div class="article-meta">
+                        <img src="images/authors/dperez.jpg" alt="David Pérez" class="author-avatar">
+                        <span class="author-info">
+                            <strong>David Pérez</strong>
+                            <em>Analista Senior de Tecnología</em>
+                        </span>
+                        <time datetime="2024-01-15T07:00:00Z">Hoy, 07:00</time>
+                    </div>
+                </header>
+                <p class="opinion-excerpt">
+                    Mientras que las capacidades de la IA en programación avanzan exponencialmente, 
+                    la realidad es más matizada que los titulares apocalípticos...
+                </p>
+                <div class="opinion-stats">
+                    <span class="agree" data-count="1234">👍 1,234 de acuerdo</span>
+                    <span class="disagree" data-count="456">👎 456 en desacuerdo</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- Trending Topics -->
+        <aside class="sidebar">
+            <section class="trending-topics">
+                <h3>🔥 Trending ahora</h3>
+                <ol class="trending-list">
+                    <li data-trend-position="1">
+                        <a href="/trending/gpt5">#GPT5</a>
+                        <span class="trend-stats">15.2K menciones</span>
+                    </li>
+                    <li data-trend-position="2">
+                        <a href="/trending/python313">#Python313</a>
+                        <span class="trend-stats">8.9K menciones</span>
+                    </li>
+                    <li data-trend-position="3">
+                        <a href="/trending/npmsecurity">#NPMSecurity</a>
+                        <span class="trend-stats">7.3K menciones</span>
+                    </li>
+                    <li data-trend-position="4">
+                        <a href="/trending/geminiultra">#GeminiUltra</a>
+                        <span class="trend-stats">5.6K menciones</span>
+                    </li>
+                    <li data-trend-position="5">
+                        <a href="/trending/react19">#React19</a>
+                        <span class="trend-stats">4.2K menciones</span>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="newsletter-signup">
+                <h3>📬 Newsletter diario</h3>
+                <p>Recibe las noticias tech más importantes</p>
+                <form class="newsletter-form" data-form-id="newsletter">
+                    <input type="email" placeholder="tu@email.com" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+                <span class="subscriber-count">23,456 suscriptores</span>
+            </section>
+
+            <section class="popular-authors">
+                <h3>✍️ Autores populares</h3>
+                <ul class="authors-list">
+                    <li>
+                        <a href="/author/jgarcia">Juan García</a>
+                        <span class="author-articles">142 artículos</span>
+                    </li>
+                    <li>
+                        <a href="/author/mlopez">María López</a>
+                        <span class="author-articles">98 artículos</span>
+                    </li>
+                    <li>
+                        <a href="/author/crodriguez">Carlos Rodríguez</a>
+                        <span class="author-articles">76 artículos</span>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 TechNews - Tu fuente de noticias tecnológicas</p>
+            <nav class="footer-nav">
+                <a href="/about">Acerca de</a>
+                <a href="/contact">Contacto</a>
+                <a href="/privacy">Privacidad</a>
+                <a href="/rss">RSS</a>
+            </nav>
+        </div>
+        <div class="social-links">
+            <a href="https://twitter.com/technews" data-social="twitter">Twitter</a>
+            <a href="https://github.com/technews" data-social="github">GitHub</a>
+            <a href="https://linkedin.com/company/technews" data-social="linkedin">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

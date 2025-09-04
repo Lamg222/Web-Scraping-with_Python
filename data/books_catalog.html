@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Libros - Librería Python</title>
+    <meta name="description" content="Los mejores libros de programación y tecnología">
+    <style>
+        .book-item { border: 1px solid #ddd; padding: 15px; margin: 10px; }
+        .price { color: #27ae60; font-weight: bold; }
+        .out-of-stock { color: #e74c3c; }
+        .rating { color: #f39c12; }
+        .discount { background: #e74c3c; color: white; padding: 2px 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="site-title">Librería Python - Catálogo de Libros</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#programming">Programación</a></li>
+                <li><a href="#data-science">Ciencia de Datos</a></li>
+                <li><a href="#web-dev">Desarrollo Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="catalog">
+        <section class="filters">
+            <div class="filter-group" data-filter-type="category">
+                <label>Categoría:</label>
+                <select id="category-filter">
+                    <option value="all">Todas</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="data">Data Science</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="books-container" id="programming">
+            <h2>Libros de Programación</h2>
+            
+            <!-- Libro 1 -->
+            <article class="book-item" data-isbn="978-0134685991" data-category="python" itemscope itemtype="http://schema.org/Book">
+                <div class="book-header">
+                    <h3 class="book-title" itemprop="name">Effective Python: 90 Specific Ways to Write Better Python</h3>
+                    <span class="discount">-20%</span>
+                </div>
+                <div class="book-details">
+                    <p class="author" itemprop="author">Brett Slatkin</p>
+                    <p class="publisher" data-pub-id="pearson">Editorial: <span itemprop="publisher">Pearson</span></p>
+                    <p class="publication-date">Publicado: <time datetime="2019-11-15" itemprop="datePublished">15 de Noviembre, 2019</time></p>
+                    <p class="description" itemprop="description">
+                        Una guía práctica con 90 consejos específicos para escribir código Python más efectivo, 
+                        cubriendo desde las mejores prácticas hasta optimizaciones avanzadas.
+                    </p>
+                    <div class="pricing">
+                        <span class="original-price" style="text-decoration: line-through;">$49.99</span>
+                        <span class="price current-price" itemprop="price" content="39.99">$39.99</span>
+                        <span class="currency" itemprop="priceCurrency" content="USD">USD</span>
+                    </div>
+                    <div class="availability">
+                        <span class="stock in-stock" data-stock="15">✓ En stock (15 unidades)</span>
+                    </div>
+                    <div class="rating-container">
+                        <span class="rating" data-rating="4.5">★★★★☆</span>
+                        <span class="reviews-count">(234 reseñas)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Best Practices</span>
+                        <span class="tag">Advanced</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Libro 2 -->
+            <article class="book-item featured" data-isbn="978-1449355739" data-category="python" itemscope itemtype="http://schema.org/Book">
+                <div class="book-header">
+                    <h3 class="book-title" itemprop="name">Learning Python, 5th Edition</h3>
+                    <span class="badge-new">Nuevo</span>
+                </div>
+                <div class="book-details">
+                    <p class="author" itemprop="author">Mark Lutz</p>
+                    <p class="publisher" data-pub-id="oreilly">Editorial: <span itemprop="publisher">O'Reilly Media</span></p>
+                    <p class="publication-date">Publicado: <time datetime="2023-07-25" itemprop="datePublished">25 de Julio, 2023</time></p>
+                    <p class="description" itemprop="description">
+                        El libro definitivo para aprender Python desde cero. Cubre Python 3.11 con ejemplos 
+                        prácticos y ejercicios que te llevarán de principiante a experto.
+                    </p>
+                    <div class="pricing">
+                        <span class="price current-price" itemprop="price" content="59.99">$59.99</span>
+                        <span class="currency" itemprop="priceCurrency" content="USD">USD</span>
+                    </div>
+                    <div class="availability">
+                        <span class="stock in-stock" data-stock="42">✓ En stock (42 unidades)</span>
+                    </div>
+                    <div class="rating-container">
+                        <span class="rating" data-rating="4.8">★★★★★</span>
+                        <span class="reviews-count">(567 reseñas)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Beginners</span>
+                        <span class="tag">Comprehensive</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Libro 3 -->
+            <article class="book-item" data-isbn="978-1491946008" data-category="python" itemscope itemtype="http://schema.org/Book">
+                <div class="book-header">
+                    <h3 class="book-title" itemprop="name">Fluent Python</h3>
+                </div>
+                <div class="book-details">
+                    <p class="author" itemprop="author">Luciano Ramalho</p>
+                    <p class="publisher" data-pub-id="oreilly">Editorial: <span itemprop="publisher">O'Reilly Media</span></p>
+                    <p class="publication-date">Publicado: <time datetime="2022-04-10" itemprop="datePublished">10 de Abril, 2022</time></p>
+                    <p class="description" itemprop="description">
+                        Descubre cómo escribir código Python idiomático efectivo aprovechando sus mejores 
+                        características y las bibliotecas más populares.
+                    </p>
+                    <div class="pricing">
+                        <span class="price current-price" itemprop="price" content="54.99">$54.99</span>
+                        <span class="currency" itemprop="priceCurrency" content="USD">USD</span>
+                    </div>
+                    <div class="availability">
+                        <span class="stock out-of-stock" data-stock="0">✗ Agotado</span>
+                    </div>
+                    <div class="rating-container">
+                        <span class="rating" data-rating="4.7">★★★★★</span>
+                        <span class="reviews-count">(412 reseñas)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Intermediate</span>
+                        <span class="tag">Idiomatic</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="books-container" id="data-science">
+            <h2>Libros de Ciencia de Datos</h2>
+            
+            <!-- Libro 4 -->
+            <article class="book-item" data-isbn="978-1491957660" data-category="data" itemscope itemtype="http://schema.org/Book">
+                <div class="book-header">
+                    <h3 class="book-title" itemprop="name">Python for Data Analysis, 3rd Edition</h3>
+                    <span class="discount">-15%</span>
+                </div>
+                <div class="book-details">
+                    <p class="author" itemprop="author">Wes McKinney</p>
+                    <p class="publisher" data-pub-id="oreilly">Editorial: <span itemprop="publisher">O'Reilly Media</span></p>
+                    <p class="publication-date">Publicado: <time datetime="2022-10-20" itemprop="datePublished">20 de Octubre, 2022</time></p>
+                    <p class="description" itemprop="description">
+                        La guía definitiva para usar pandas, NumPy, y Jupyter en el análisis de datos. 
+                        Incluye casos prácticos del mundo real.
+                    </p>
+                    <div class="pricing">
+                        <span class="original-price" style="text-decoration: line-through;">$64.99</span>
+                        <span class="price current-price" itemprop="price" content="55.24">$55.24</span>
+                        <span class="currency" itemprop="priceCurrency" content="USD">USD</span>
+                    </div>
+                    <div class="availability">
+                        <span class="stock low-stock" data-stock="3">⚠ Pocas unidades (3)</span>
+                    </div>
+                    <div class="rating-container">
+                        <span class="rating" data-rating="4.9">★★★★★</span>
+                        <span class="reviews-count">(892 reseñas)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Data Science</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Analysis</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Libro 5 -->
+            <article class="book-item" data-isbn="978-1492041139" data-category="data" itemscope itemtype="http://schema.org/Book">
+                <div class="book-header">
+                    <h3 class="book-title" itemprop="name">Data Science from Scratch, 2nd Edition</h3>
+                </div>
+                <div class="book-details">
+                    <p class="author" itemprop="author">Joel Grus</p>
+                    <p class="publisher" data-pub-id="oreilly">Editorial: <span itemprop="publisher">O'Reilly Media</span></p>
+                    <p class="publication-date">Publicado: <time datetime="2019-05-16" itemprop="datePublished">16 de Mayo, 2019</time></p>
+                    <p class="description" itemprop="description">
+                        Aprende ciencia de datos construyendo las herramientas desde cero. Perfecto para 
+                        entender los fundamentos matemáticos y algorítmicos.
+                    </p>
+                    <div class="pricing">
+                        <span class="price current-price" itemprop="price" content="44.99">$44.99</span>
+                        <span class="currency" itemprop="priceCurrency" content="USD">USD</span>
+                    </div>
+                    <div class="availability">
+                        <span class="stock in-stock" data-stock="21">✓ En stock (21 unidades)</span>
+                    </div>
+                    <div class="rating-container">
+                        <span class="rating" data-rating="4.3">★★★★☆</span>
+                        <span class="reviews-count">(345 reseñas)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Data Science</span>
+                        <span class="tag">Fundamentals</span>
+                        <span class="tag">Mathematics</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="books-container" id="web-dev">
+            <h2>Desarrollo Web</h2>
+            
+            <!-- Libro 6 -->
+            <article class="book-item" data-isbn="978-1491978443" data-category="javascript" itemscope itemtype="http://schema.org/Book">
+                <div class="book-header">
+                    <h3 class="book-title" itemprop="name">JavaScript: The Definitive Guide, 7th Edition</h3>
+                    <span class="badge-bestseller">Bestseller</span>
+                </div>
+                <div class="book-details">
+                    <p class="author" itemprop="author">David Flanagan</p>
+                    <p class="publisher" data-pub-id="oreilly">Editorial: <span itemprop="publisher">O'Reilly Media</span></p>
+                    <p class="publication-date">Publicado: <time datetime="2020-06-23" itemprop="datePublished">23 de Junio, 2020</time></p>
+                    <p class="description" itemprop="description">
+                        La referencia completa de JavaScript para programadores. Cubre ES2020 y las APIs web 
+                        modernas con ejemplos prácticos.
+                    </p>
+                    <div class="pricing">
+                        <span class="price current-price" itemprop="price" content="49.99">$49.99</span>
+                        <span class="currency" itemprop="priceCurrency" content="USD">USD</span>
+                    </div>
+                    <div class="availability">
+                        <span class="stock in-stock" data-stock="18">✓ En stock (18 unidades)</span>
+                    </div>
+                    <div class="rating-container">
+                        <span class="rating" data-rating="4.6">★★★★★</span>
+                        <span class="reviews-count">(723 reseñas)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Web Development</span>
+                        <span class="tag">Reference</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Libro 7 -->
+            <article class="book-item" data-isbn="978-1617294433" data-category="python" itemscope itemtype="http://schema.org/Book">
+                <div class="book-header">
+                    <h3 class="book-title" itemprop="name">Web Scraping with Python, 2nd Edition</h3>
+                    <span class="badge-recommended">Recomendado</span>
+                </div>
+                <div class="book-details">
+                    <p class="author" itemprop="author">Ryan Mitchell</p>
+                    <p class="publisher" data-pub-id="manning">Editorial: <span itemprop="publisher">Manning</span></p>
+                    <p class="publication-date">Publicado: <time datetime="2018-04-15" itemprop="datePublished">15 de Abril, 2018</time></p>
+                    <p class="description" itemprop="description">
+                        Aprende técnicas modernas de web scraping con Python. Incluye Beautiful Soup, Scrapy, 
+                        y manejo de JavaScript con Selenium.
+                    </p>
+                    <div class="pricing">
+                        <span class="price current-price" itemprop="price" content="42.99">$42.99</span>
+                        <span class="currency" itemprop="priceCurrency" content="USD">USD</span>
+                    </div>
+                    <div class="availability">
+                        <span class="stock in-stock" data-stock="8">✓ En stock (8 unidades)</span>
+                    </div>
+                    <div class="rating-container">
+                        <span class="rating" data-rating="4.4">★★★★☆</span>
+                        <span class="reviews-count">(289 reseñas)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Web Scraping</span>
+                        <span class="tag">BeautifulSoup</span>
+                        <span class="tag">Scrapy</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Paginación -->
+        <nav class="pagination" aria-label="Páginas del catálogo">
+            <ul class="page-list">
+                <li><a href="#" class="page-link prev" data-page="prev">← Anterior</a></li>
+                <li><a href="#" class="page-link active" data-page="1">1</a></li>
+                <li><a href="#" class="page-link" data-page="2">2</a></li>
+                <li><a href="#" class="page-link" data-page="3">3</a></li>
+                <li><span class="ellipsis">...</span></li>
+                <li><a href="#" class="page-link" data-page="10">10</a></li>
+                <li><a href="#" class="page-link next" data-page="next">Siguiente →</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <aside class="sidebar">
+        <section class="bestsellers-widget">
+            <h3>Top Ventas</h3>
+            <ol class="bestsellers-list">
+                <li data-rank="1">
+                    <a href="#978-1491957660">Python for Data Analysis</a>
+                    <span class="sales-badge">🔥 Hot</span>
+                </li>
+                <li data-rank="2">
+                    <a href="#978-1449355739">Learning Python</a>
+                </li>
+                <li data-rank="3">
+                    <a href="#978-1491978443">JavaScript: The Definitive Guide</a>
+                </li>
+            </ol>
+        </section>
+
+        <section class="stats-widget">
+            <h3>Estadísticas</h3>
+            <dl class="stats-list">
+                <dt>Total de libros:</dt>
+                <dd class="stat-value" data-stat="total">127</dd>
+                <dt>En stock:</dt>
+                <dd class="stat-value" data-stat="in-stock">89</dd>
+                <dt>Con descuento:</dt>
+                <dd class="stat-value" data-stat="discounted">23</dd>
+            </dl>
+        </section>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Librería Python | Tu fuente de conocimiento técnico</p>
+        <div class="footer-links">
+            <a href="/privacy">Privacidad</a> |
+            <a href="/terms">Términos</a> |
+            <a href="/contact">Contacto</a>
+        </div>
+    </footer>
+</body>
+</html>

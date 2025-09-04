@@ -1,0 +1,69 @@
+# Core Web Scraping Libraries
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+scrapy==2.11.0
+selenium==4.15.0
+
+# HTTP and URL handling
+urllib3==2.1.0
+httpx==0.25.0
+
+# Data Processing
+pandas==2.1.1
+numpy==1.25.2
+openpyxl==3.1.2
+
+# Database connectivity
+sqlalchemy==2.0.21
+pymongo==4.5.0
+psycopg2-binary==2.9.7
+
+# Visualization
+matplotlib==3.8.0
+seaborn==0.12.2
+
+# Development and Testing
+jupyter==1.0.0
+notebook==7.0.4
+ipython==8.16.1
+pytest==7.4.2
+
+# Web drivers for Selenium
+webdriver-manager==4.0.1
+
+# Text processing
+regex==2023.8.8
+python-dateutil==2.8.2
+
+# Async support
+aiohttp==3.8.6
+asyncio==3.4.3
+
+# Rate limiting
+ratelimit==2.2.1
+
+# User agents
+fake-useragent==1.4.0
+
+# Configuration
+python-dotenv==1.0.0
+
+# Progress bars
+tqdm==4.66.1
+
+# Image processing (optional)
+Pillow==10.0.1
+
+# Excel support
+xlrd==2.0.1
+xlsxwriter==3.1.6
+
+# JSON handling
+jsonschema==4.19.1
+
+# Command line interface
+click==8.1.7
+
+# Logging
+colorlog==6.7.0

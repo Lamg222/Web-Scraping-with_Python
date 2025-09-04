@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TechStore - Tienda de Tecnología</title>
+    <meta name="description" content="Los mejores productos tecnológicos al mejor precio">
+</head>
+<body>
+    <header>
+        <h1>TechStore</h1>
+        <div class="search-bar">
+            <input type="search" placeholder="Buscar productos...">
+            <button>🔍</button>
+        </div>
+        <div class="user-info">
+            <span class="cart-count" data-items="3">🛒 3</span>
+            <span class="user-name">Hola, Usuario</span>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="/">Inicio</a> &gt;
+        <a href="/electronics">Electrónica</a> &gt;
+        <span>Laptops</span>
+    </nav>
+
+    <main class="products-container">
+        <aside class="filters-sidebar">
+            <h3>Filtros</h3>
+            <div class="filter-group" data-filter="price">
+                <h4>Precio</h4>
+                <input type="range" min="0" max="5000" value="2500">
+                <span class="price-range">$0 - $5000</span>
+            </div>
+            <div class="filter-group" data-filter="brand">
+                <h4>Marca</h4>
+                <label><input type="checkbox" value="dell"> Dell</label>
+                <label><input type="checkbox" value="hp"> HP</label>
+                <label><input type="checkbox" value="lenovo"> Lenovo</label>
+                <label><input type="checkbox" value="apple"> Apple</label>
+            </div>
+            <div class="filter-group" data-filter="rating">
+                <h4>Valoración</h4>
+                <label><input type="checkbox"> ⭐⭐⭐⭐⭐</label>
+                <label><input type="checkbox"> ⭐⭐⭐⭐ y más</label>
+                <label><input type="checkbox"> ⭐⭐⭐ y más</label>
+            </div>
+        </aside>
+
+        <section class="products-grid">
+            <div class="results-info">
+                <span class="results-count">Mostrando 12 de 157 productos</span>
+                <select class="sort-by">
+                    <option value="relevance">Más relevantes</option>
+                    <option value="price-asc">Precio: menor a mayor</option>
+                    <option value="price-desc">Precio: mayor a menor</option>
+                    <option value="rating">Mejor valorados</option>
+                    <option value="newest">Más nuevos</option>
+                </select>
+            </div>
+
+            <!-- Producto 1 -->
+            <article class="product-card" data-product-id="LAP-001" data-brand="dell" data-category="laptop">
+                <div class="product-badges">
+                    <span class="badge-sale">-25%</span>
+                    <span class="badge-new">Nuevo</span>
+                </div>
+                <div class="product-image">
+                    <img src="dell-xps-13.jpg" alt="Dell XPS 13" data-zoom="true">
+                    <div class="quick-view" data-product="LAP-001">Vista rápida</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">
+                        <a href="/product/LAP-001">Dell XPS 13 - Intel Core i7, 16GB RAM, 512GB SSD</a>
+                    </h3>
+                    <div class="product-brand">Dell</div>
+                    <div class="product-sku">SKU: LAP-001-XPS</div>
+                    <div class="product-rating" data-rating="4.5">
+                        <span class="stars">⭐⭐⭐⭐☆</span>
+                        <span class="rating-value">4.5</span>
+                        <span class="reviews-count">(234 reseñas)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price-original">$1,599.99</span>
+                        <span class="price-current" data-price="1199.99">$1,199.99</span>
+                        <span class="price-savings">Ahorras $400</span>
+                    </div>
+                    <div class="product-features">
+                        <ul>
+                            <li>Procesador Intel Core i7 11va Gen</li>
+                            <li>16GB RAM LPDDR4x</li>
+                            <li>512GB SSD NVMe</li>
+                            <li>Pantalla 13.4" FHD+</li>
+                        </ul>
+                    </div>
+                    <div class="product-availability" data-stock="15">
+                        <span class="in-stock">✓ En stock</span>
+                        <span class="units-left">Quedan 15 unidades</span>
+                    </div>
+                    <div class="product-shipping">
+                        <span class="free-shipping">🚚 Envío gratis</span>
+                        <span class="delivery-time">Entrega en 2-3 días</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart" data-action="add-to-cart">Añadir al carrito</button>
+                        <button class="btn-wishlist" data-action="add-to-wishlist">❤️</button>
+                        <button class="btn-compare" data-action="compare">⚖️</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="product-card bestseller" data-product-id="LAP-002" data-brand="apple" data-category="laptop">
+                <div class="product-badges">
+                    <span class="badge-bestseller">Bestseller</span>
+                </div>
+                <div class="product-image">
+                    <img src="macbook-pro-14.jpg" alt="MacBook Pro 14">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">
+                        <a href="/product/LAP-002">Apple MacBook Pro 14" M3 Pro, 18GB RAM, 512GB SSD</a>
+                    </h3>
+                    <div class="product-brand">Apple</div>
+                    <div class="product-sku">SKU: LAP-002-MBP</div>
+                    <div class="product-rating" data-rating="4.8">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="rating-value">4.8</span>
+                        <span class="reviews-count">(567 reseñas)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price-current" data-price="2499.99">$2,499.99</span>
+                    </div>
+                    <div class="product-features">
+                        <ul>
+                            <li>Chip Apple M3 Pro</li>
+                            <li>18GB memoria unificada</li>
+                            <li>512GB SSD</li>
+                            <li>Pantalla Liquid Retina XDR</li>
+                        </ul>
+                    </div>
+                    <div class="product-availability" data-stock="8">
+                        <span class="low-stock">⚠️ Pocas unidades</span>
+                        <span class="units-left">Quedan 8 unidades</span>
+                    </div>
+                    <div class="product-shipping">
+                        <span class="free-shipping">🚚 Envío gratis</span>
+                        <span class="delivery-time">Entrega en 1-2 días</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-wishlist">❤️</button>
+                        <button class="btn-compare">⚖️</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="product-card" data-product-id="LAP-003" data-brand="lenovo" data-category="laptop">
+                <div class="product-badges">
+                    <span class="badge-sale">-30%</span>
+                </div>
+                <div class="product-image">
+                    <img src="lenovo-thinkpad.jpg" alt="Lenovo ThinkPad">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">
+                        <a href="/product/LAP-003">Lenovo ThinkPad X1 Carbon Gen 9, i5, 8GB RAM, 256GB SSD</a>
+                    </h3>
+                    <div class="product-brand">Lenovo</div>
+                    <div class="product-sku">SKU: LAP-003-TP</div>
+                    <div class="product-rating" data-rating="4.3">
+                        <span class="stars">⭐⭐⭐⭐☆</span>
+                        <span class="rating-value">4.3</span>
+                        <span class="reviews-count">(189 reseñas)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price-original">$1,299.99</span>
+                        <span class="price-current" data-price="909.99">$909.99</span>
+                        <span class="price-savings">Ahorras $390</span>
+                    </div>
+                    <div class="product-features">
+                        <ul>
+                            <li>Intel Core i5 11va Gen</li>
+                            <li>8GB RAM DDR4</li>
+                            <li>256GB SSD PCIe</li>
+                            <li>Pantalla 14" FHD</li>
+                        </ul>
+                    </div>
+                    <div class="product-availability" data-stock="0">
+                        <span class="out-of-stock">✗ Agotado</span>
+                        <button class="notify-me">Notificarme</button>
+                    </div>
+                    <div class="product-shipping">
+                        <span class="shipping-cost">📦 Envío $9.99</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart" disabled>Agotado</button>
+                        <button class="btn-wishlist">❤️</button>
+                        <button class="btn-compare">⚖️</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 4 -->
+            <article class="product-card" data-product-id="MON-001" data-brand="lg" data-category="monitor">
+                <div class="product-badges">
+                    <span class="badge-eco">Eco-friendly</span>
+                </div>
+                <div class="product-image">
+                    <img src="lg-ultrawide.jpg" alt="LG UltraWide">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">
+                        <a href="/product/MON-001">LG UltraWide 34" Curved Gaming Monitor</a>
+                    </h3>
+                    <div class="product-brand">LG</div>
+                    <div class="product-sku">SKU: MON-001-LG</div>
+                    <div class="product-rating" data-rating="4.6">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="rating-value">4.6</span>
+                        <span class="reviews-count">(445 reseñas)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price-current" data-price="599.99">$599.99</span>
+                        <span class="installments">o 12 cuotas de $49.99</span>
+                    </div>
+                    <div class="product-features">
+                        <ul>
+                            <li>34" UWQHD (3440x1440)</li>
+                            <li>144Hz Refresh Rate</li>
+                            <li>1ms Response Time</li>
+                            <li>AMD FreeSync Premium</li>
+                        </ul>
+                    </div>
+                    <div class="product-availability" data-stock="23">
+                        <span class="in-stock">✓ En stock</span>
+                    </div>
+                    <div class="product-shipping">
+                        <span class="free-shipping">🚚 Envío gratis</span>
+                        <span class="delivery-time">Entrega en 3-5 días</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-wishlist">❤️</button>
+                        <button class="btn-compare">⚖️</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 5 -->
+            <article class="product-card" data-product-id="KEY-001" data-brand="logitech" data-category="keyboard">
+                <div class="product-badges">
+                    <span class="badge-sale">-15%</span>
+                </div>
+                <div class="product-image">
+                    <img src="logitech-mx-keys.jpg" alt="Logitech MX Keys">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">
+                        <a href="/product/KEY-001">Logitech MX Keys Advanced Wireless Keyboard</a>
+                    </h3>
+                    <div class="product-brand">Logitech</div>
+                    <div class="product-sku">SKU: KEY-001-LOG</div>
+                    <div class="product-rating" data-rating="4.7">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="rating-value">4.7</span>
+                        <span class="reviews-count">(892 reseñas)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price-original">$119.99</span>
+                        <span class="price-current" data-price="101.99">$101.99</span>
+                    </div>
+                    <div class="product-features">
+                        <ul>
+                            <li>Retroiluminación inteligente</li>
+                            <li>Conectividad USB-C y Bluetooth</li>
+                            <li>Compatible con múltiples dispositivos</li>
+                            <li>Batería recargable de larga duración</li>
+                        </ul>
+                    </div>
+                    <div class="product-availability" data-stock="67">
+                        <span class="in-stock">✓ En stock</span>
+                    </div>
+                    <div class="product-shipping">
+                        <span class="free-shipping">🚚 Envío gratis</span>
+                        <span class="delivery-time">Entrega en 2-3 días</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-wishlist">❤️</button>
+                        <button class="btn-compare">⚖️</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 6 - Bundle/Combo -->
+            <article class="product-card bundle" data-product-id="BUN-001" data-category="bundle">
+                <div class="product-badges">
+                    <span class="badge-bundle">Bundle Deal</span>
+                    <span class="badge-sale">-35%</span>
+                </div>
+                <div class="product-image">
+                    <img src="gaming-bundle.jpg" alt="Gaming Bundle">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">
+                        <a href="/product/BUN-001">Gaming Setup Completo - PC + Monitor + Accesorios</a>
+                    </h3>
+                    <div class="product-brand">Multi-brand</div>
+                    <div class="product-sku">SKU: BUN-001-GAME</div>
+                    <div class="bundle-contents">
+                        <h4>Incluye:</h4>
+                        <ul>
+                            <li>PC Gaming RTX 4070</li>
+                            <li>Monitor 27" 165Hz</li>
+                            <li>Teclado mecánico RGB</li>
+                            <li>Mouse gaming 16000 DPI</li>
+                            <li>Headset 7.1 Surround</li>
+                        </ul>
+                    </div>
+                    <div class="product-rating" data-rating="4.9">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="rating-value">4.9</span>
+                        <span class="reviews-count">(156 reseñas)</span>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price-original">$2,999.99</span>
+                        <span class="price-current" data-price="1949.99">$1,949.99</span>
+                        <span class="price-savings">Ahorras $1,050</span>
+                    </div>
+                    <div class="product-availability" data-stock="5">
+                        <span class="low-stock">⚠️ Últimas unidades</span>
+                        <span class="units-left">Quedan 5 bundles</span>
+                    </div>
+                    <div class="product-shipping">
+                        <span class="free-shipping">🚚 Envío e instalación gratis</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-wishlist">❤️</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Paginación -->
+        <nav class="pagination">
+            <a href="?page=1" class="page-link active">1</a>
+            <a href="?page=2" class="page-link">2</a>
+            <a href="?page=3" class="page-link">3</a>
+            <span>...</span>
+            <a href="?page=13" class="page-link">13</a>
+            <a href="?page=2" class="page-link next">Siguiente →</a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2024 TechStore - Tu tienda de confianza</p>
+            <div class="payment-methods">
+                <span>Aceptamos: Visa, MasterCard, PayPal, Bitcoin</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
