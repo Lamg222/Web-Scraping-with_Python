@@ -184,7 +184,6 @@ Las contribuciones son bienvenidas! Por favor:
 
 Este curso es únicamente con fines educativos. Siempre:
 - Respeta los términos de servicio de los sitios web
-- Revisa el archivo robots.txt
 - Implementa rate limiting apropiado
 - Considera usar APIs cuando estén disponibles
 - Solicita permiso cuando sea necesario
@@ -192,9 +191,7 @@ Este curso es únicamente con fines educativos. Siempre:
 ## 📧 Contacto y Soporte
 
 Si tienes preguntas o encuentras problemas:
-- Abre un issue en GitHub
-- Únete a nuestra comunidad en Discord
-- Envía un email a: soporte@ejemplo.com
+- Escríbeme en [Linkedin](www.linkedin.com/in/mendezgasca)
 
 ## 📄 Licencia
 
