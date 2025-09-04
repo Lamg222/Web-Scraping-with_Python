@@ -19,6 +19,10 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+create_gifs.py
+gif.html
+gif_2.html
+gifs/
 
 # Virtual environments
 venv/
